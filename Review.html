@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url('img/Review.jpg');
+            background-size: cover;
+            font-family:'Baloo Bhai',cursive;
+        }
+
+        #oneimg{
+            height: 100px;
+            width: 96px;
+            position: absolute;
+            top:120px;
+            left: 50px;
+            border-radius: 100px;
+        }
+
+        #twoimg{
+            height: 105px;
+            width: 100px;
+            position: absolute;
+            top:310px;
+            right: 50px;
+            border-radius: 100px;
+        }
+
+        #threeimg{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top:520px;
+            left: 50px;
+            border-radius: 100px;
+        }
+
+        #one{
+            color: white;
+            background-color: cadetblue;
+            font-family:'Baloo Bhai',cursive;
+            border: 4px solid white;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            width: 60%;
+            position: absolute;
+            top:140px;
+            right: 420px;
+            font-size: 15px;
+            padding: 10px 8px;
+        }
+
+        #two{
+            color: white;
+            background-color: cadetblue;
+            font-family:'Baloo Bhai',cursive;
+            border: 4px solid white;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            width: 60%;
+            position: absolute;
+            top:340px;
+            right: 180px;
+            font-size: 15px;
+            padding: 10px 8px;
+        }
+
+        #three{
+            color: white;
+            background-color: cadetblue;
+            font-family:'Baloo Bhai',cursive;
+            border: 4px solid white;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            width: 60%;
+            position: absolute;
+            top:540px;
+            right: 420px;
+            font-size: 15px;
+            padding: 10px 8px;
+        }
+
+        .cont{
+            cursor: pointer;
+        }
+
+
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 10px;
+            top: 18px;
+        }
+
+        .mid{
+            /* border: 2px solid green; */
+            display: block;
+            width: 36%;
+            margin:20px auto;
+            /* border-radius: 50px; */
+            padding: 0px;
+        }
+
+        .right{
+            /* border: 2px solid palevioletred; */
+            position: absolute;
+            right: 40px;
+            top: 20px;
+        }
+
+        li{
+            display: inline-block;
+            margin: 0px;
+            padding:0px 20px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+
+        a:hover, a:active{
+            text-decoration: underline;
+            color: gray;
+        }
+        
+        .left img{
+            width:40px;
+            filter: invert(100%);
+            padding-left: 40px;
+            
+        }
+        
+        #name{
+            text-align: center;
+            font-family:'Baloo Bhai',cursive;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+            margin-left: 14px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+     <!-- Left box for logo -->
+     <div class="left">
+        <img src="img/LOGO.png">
+        <div id="name">Pavan Fitness</div>
+    </div>
+    <!-- Mid box for navbar -->
+    <div class="mid">
+        <navbar>
+            <ul  class="navbar">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Fitnesscalc.html">Fitness Calculator</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+    </div>
+
+    <img src="img/P.jpg" alt="Pandu Gadu" id="oneimg">
+    <div class="cont" id="one">
+        "Fantastic gym! The facilities are top-notch, and the equipment is always well-maintained. The staff is friendly and knowledgeable, always ready to offer guidance and support. I've seen great results since joining, and the positive atmosphere keeps me motivated. Highly recommend!!!"
+        <br>
+        MAHESH
+    </div>
+
+    <img src="img/G.jpg" alt="Salaar Gadu" id="twoimg">
+    <div class="cont" id="two">
+        "Joining this gym was one of the best decisions I've made for my fitness journey. The trainers are incredible, providing personalized attention and tailored workout plans. The range of equipment and amenities is impressive, catering to all fitness levels. Plus, the community vibe here is amazing – everyone is supportive and encouraging. Thumbs up!!!"
+        <br>
+        GIRISH
+    </div>
+
+    <img src="img/M.jpg" alt="Gundu Gadu" id="threeimg">
+    <div class="cont" id="three">
+        "I've finally found my fitness home at this gym. The staff is genuinely passionate about helping you succeed and create positive habits. The gym itself is spacious, clean, and well-organized, making it easy to navigate and find what you need. The energy and motivation in this place are infectious. Highly recommend joining for an incredible fitness experience!!!"
+        <br>
+        MANIDEEP
+    </div>
+</body>
+</html>

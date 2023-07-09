@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan Fitness</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Reset */
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('img/BG.jpeg');
+            background-size: cover;
+            color: white;
+            font-family:'Baloo Bhai',cursive;
+            
+        }
+
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 10px;
+            top: 18px;
+        }
+
+        .mid{
+            /* border: 2px solid green; */
+            display: block;
+            width: 36%;
+            margin:20px auto;
+            /* border-radius: 50px; */
+            padding: 0px;
+        }
+
+        .right{
+            /* border: 2px solid palevioletred; */
+            position: absolute;
+            right: 40px;
+            top: 20px;
+        }
+
+        li{
+            display: inline-block;
+            margin: 0px;
+            padding:0px 20px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+
+        a:hover, a:active{
+            text-decoration: underline;
+            color: gray;
+        }
+        
+        img{
+            width:40px;
+            filter: invert(100%);
+            padding-left: 40px;
+            
+        }
+        
+        #name{
+            text-align: center;
+            font-family:'Baloo Bhai',cursive;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+            margin-left: 14px;
+        }
+        
+        .BTN{
+            margin:0px 9px;
+            background-color: black;
+            color: white;
+            padding : 3px 14px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size:12px ;
+            cursor: pointer;
+            font-family:'Baloo Bhai',cursive;
+            font-weight: bold;
+        }
+
+        .BTN:hover, #exf:hover{
+            background-color: gray;
+            color: white;
+        }
+        
+        .container{
+            border: 2px solid white;;
+            margin: 95px 40px;
+            padding: 60px 30px;
+            width: 36%;
+            border-radius: 20px;
+            
+        }
+
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 60%;
+            font-family:'Baloo Bhai',cursive; ;
+            font-size: 12px;
+            margin: 10px auto;
+            padding: 3px 3px;
+            border-radius: 10px;
+            border: 2px solid whitesmoke;
+        }
+
+        .container h1{
+            text-align: center;
+        }
+
+        .container .BTN{
+            margin: 20px 107px;
+            width: 61%;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/LOGO.png">
+            <div id="name">Pavan Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <navbar>
+                <ul  class="navbar">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Fitnesscalc.html">Fitness Calculator</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <BUTTON class="BTN"><a href="Review.html" id="exf">Examine Feedback</a></BUTTON>
+            
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the BEaST GYM of Palamaner</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <div><input type="text" name="Name" placeholder="Enter your Good Name"></div>
+
+                <div><input type="number" name="Age" placeholder="Enter your Age" maxlength="2"></div>
+
+                <div><input type="text" name="Gender" placeholder="Enter your Gender"></div>
+
+                <div><input type="text" name="Residence" placeholder="Enter your Locality"></div>
+
+                <div><input type="number" name="Mobile" placeholder="Enter your Mobile Number"></div>
+                <div>
+                <button class="BTN">Submit</button>
+            </div>
+
+            
+            </div>
+        </form>
+    </div>
+</body>
+</html>
